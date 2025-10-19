@@ -13,7 +13,7 @@ const Footer = () => {
 
     try {
       const res = await axios.post(
-        "http://localhost:4000/api/v1/message/send",
+        "https://event-planning-backend-goce.onrender.com/api/v1/message/send",
         { name: "Email-Received", email, subject: "email", message: "This is My email!" },
         { headers: { "Content-Type": "application/json" }, withCredentials: true }
       );
